@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="data.js"></script>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>FACENFORCE</title>
+  <link rel="shortcut icon" type="image/png" href="images/icon.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #ECD8E0;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 35px;
+      font-weight: 500;
+      color: black;
+      margin: 2px;
+      display: inline;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .button {
+      top: 0;
+      left: 0;
+      margin: 1px;
+      padding: 6px;
+      background-color: #8CE0EB;
+    }
+
+    .button:hover {
+      background-color: #FFD5B6;
+    }
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      font-size: 26px;
+      color: black;
+    }
+
+    #loading {
+      margin: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>FACENFORCE</h1>
+  <br>
+  <button class="button"><a href="/register">Register Faces</a></button>
+  <br>
+  <input type="file" id="imageUpload">
+  <img id="loading" src="images/loading.gif" center no-repeat>
+  <br>
+</body>
+
+</html>

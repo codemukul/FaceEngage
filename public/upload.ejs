@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Upload Images</title>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png" />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ECD8E0;
+		}
+
+		h1 {
+			font-size: 35px;
+			font-weight: 500;
+			color: black;
+			margin: 5px;
+			padding: 5px;
+		}
+
+		.button {
+			top: 0;
+			left: 0;
+			margin: auto;
+			padding: 5px;
+			width: 30%;
+
+		}
+
+		input {
+			font-size: 24px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Upload 2 images of the person to register .</h1>
+
+	<form action="/uploadProfilePicture" enctype="multipart/form-data" method="POST" class="button">
+
+		<span>
+			<p style="font-size: 24px;">Upload 2 Pictures :</p>
+		</span>
+		<br>
+		<input type="file" name="1" required /> <br>
+		<input type="file" name="2" required /> <br>
+
+		<br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+
+</html>

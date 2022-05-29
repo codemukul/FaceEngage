@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register Face</title>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png" />
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #ECD8E0;
+		}
+
+		h1 {
+			font-size: 35px;
+			font-weight: 500;
+			color: black;
+			margin: 5px;
+			padding: 5px;
+		}
+
+		.button {
+			top: 0;
+			left: 0;
+			margin: 5px;
+			padding: 5px;
+			background-color: #8CE0EB;
+			display: inline;
+		}
+
+		.button:hover {
+			background-color: #FFD5B6;
+		}
+
+		#textbox {
+			margin: auto;
+			width: 30%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Register Person</h1>
+
+	<form action="/up" method="POST" id="textbox">
+		<span>
+			<p style="font-size: 26px;">Name of the person to register :</p>
+		</span>
+		<input style="font-size: 26px;" type="text" name="text1"> <br>
+		<input style="font-size: 26px;" type="submit" value="submit">
+	</form>
+</body>
+
+</html>
